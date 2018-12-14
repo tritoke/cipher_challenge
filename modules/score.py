@@ -9,7 +9,7 @@ def score(text):
 def ioc(text):
     t = text.lower()
     def thing(x):
-        nx = text.count(x)
+        nx = t.count(x)
         return nx*(nx-1)
     s = sum(map(thing, ascii_lowercase))
     c = 26
