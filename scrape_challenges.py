@@ -5,10 +5,16 @@ from multiprocessing import Pool
 from re import search
 from functools import partial
 from argparse import ArgumentParser
+from os.path import exists
+
+if not exists("./challenges/"):
+    from os import mkdir
+    mkdir("./challenges/")
 
 parser = ArgumentParser()
 parser.add_argument("-v", "--verbose", type=bool, default=False)
 verbose = parser.parse_args().verbose
+
 base_url = "https://www.cipherchallenge.org/challenges/challenge-{}/"
 urls = [base_url.format(i) for i in range(1, 11)]
 

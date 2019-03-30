@@ -15,6 +15,8 @@ def cipher(offset, text):
     return out
 
 if __name__ == '__main__':
-	print("offset 13 of\n'Nqq guerr gb svir, gvzrf gung ahzore ol frira, gura unyir gung ahzore. Jung qb lbh trg?'\nis: ", end="\n'")
-	print(cipher(13, "Nqq guerr gb svir, gvzrf gung ahzore ol frira, gura unyir gung ahzore. Jung qb lbh trg?"), end="'\n")
+    for i in range(26):
+        print(cipher(i, """N HEY rapbqrq zrffntr jenccrq va n Pnrfne Pvcure"""))
+    print("offset 13 of\n'Nqq guerr gb svir, gvzrf gung ahzore ol frira, gura unyir gung ahzore. Jung qb lbh trg?'\nis: ", end="\n'")
+    print(cipher(13, "Nqq guerr gb svir, gvzrf gung ahzore ol frira, gura unyir gung ahzore. Jung qb lbh trg?"), end="'\n")
 
